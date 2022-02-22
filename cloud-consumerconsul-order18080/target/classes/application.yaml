@@ -1,0 +1,11 @@
+server:
+  port: 18080
+spring:
+  application:
+    name: consul-order-service
+  cloud:
+    consul:
+      discovery:
+        service-name: ${spring.application.name}
+        heartbeat:
+          enabled: true

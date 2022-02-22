@@ -1,0 +1,8 @@
+server:
+  port: 18080
+spring:
+  application:
+    name: cloud-order-service
+  cloud:
+    zookeeper:
+      connect-string: 192.168.123.207
