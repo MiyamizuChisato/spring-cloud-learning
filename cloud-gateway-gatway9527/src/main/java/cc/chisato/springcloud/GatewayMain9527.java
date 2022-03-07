@@ -2,13 +2,14 @@ package cc.chisato.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-//@RibbonClient(name = "CLOUD-PAYMENT-SERVICE", configuration = MyselfRule.class)
-public class OrderMain8080 {
+@EnableDiscoveryClient
+public class GatewayMain9527 {
     public static void main(String[] args) {
-        SpringApplication.run(OrderMain8080.class, args);
+        SpringApplication.run(GatewayMain9527.class, args);
     }
 }
